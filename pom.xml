@@ -2,7 +2,7 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.sphereon.sdk</groupId>
-  <artifactId>ez-docseal-java8-sdk</artifactId>
+  <artifactId>ezdocseal-java8-sdk</artifactId>
   <packaging>jar</packaging>
   <name>EzDocSeal</name>
   <version>1.0.0-SNAPSHOT</version>
@@ -45,6 +45,12 @@
       <artifactId>aws-java-sdk-opensdk</artifactId>
       <version>1.11.710</version>
       <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>4.13.2</version>
+      <scope>test</scope>
     </dependency>
   </dependencies>
 
