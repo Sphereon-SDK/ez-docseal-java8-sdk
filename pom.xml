@@ -5,7 +5,7 @@
   <artifactId>ezdocseal-java8-sdk</artifactId>
   <packaging>jar</packaging>
   <name>EzDocSeal</name>
-  <version>1.0.0</version>
+  <version>1.0.1-SNAPSHOT</version>
   <description>Client package for the EzDocSeal API, requiring at least java 8</description>
 
   <properties>
