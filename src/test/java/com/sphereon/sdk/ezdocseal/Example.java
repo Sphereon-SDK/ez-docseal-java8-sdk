@@ -11,6 +11,7 @@ import java.io.File;
 import java.io.IOException;
 import java.net.URISyntaxException;
 import java.nio.file.Files;
+import java.nio.file.Path;
 import org.junit.Test;
 
 public class Example {
@@ -35,8 +36,8 @@ public class Example {
 
           // Timeouts
           .timeoutConfiguration(new TimeoutConfiguration()
-            .httpRequestTimeout(3000)
-            .totalExecutionTimeout(10000)
+            .httpRequestTimeout(5000)
+            .totalExecutionTimeout(30000)
             .socketTimeout(2000))
           .build();
 
@@ -61,7 +62,9 @@ public class Example {
         final byte[] signedPdfBytes = Base64.decode(result.getJsonSignResponse().getContent());
 
         // Write the PDF data
-        Files.write(new File("signed-example-output.pdf").toPath(), signedPdfBytes);
+        final Path outputPath = Files.write(new File("signed-example-output.pdf").toPath(), signedPdfBytes);
+
+        outputPath.toFile().deleteOnExit();
 
     }
 
