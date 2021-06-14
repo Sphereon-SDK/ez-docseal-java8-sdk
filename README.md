@@ -36,7 +36,7 @@ To depend on this project in Apache Maven, add the following to your pom.xml fil
 <dependencies>
     <dependency>
         <groupId>com.sphereon.sdk</groupId>
-        <artifactId>ezdocseal-sdk</artifactId>
+        <artifactId>ezdocseal-java8-sdk</artifactId>
         <!-- Snapshot/development version, remove -SNAPSHOT for releases -->
         <version>1.0.0-SNAPSHOT</version>
     </dependency>
@@ -51,7 +51,7 @@ To depend on this project in Apache Maven, add the following to your pom.xml fil
 To depend on this project in Gradle instead of maven, add the following to your build.gradle file.
 ```perl
 dependencies {
-    compile 'com.sphereon.sdk:ezdocseal-sdk:1.0.0-SNAPSHOT'
+    compile 'com.sphereon.sdk:ezdocseal-java8-sdk:1.0.0-SNAPSHOT'
 }
 ```
 
